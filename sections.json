@@ -1,0 +1,41 @@
+{
+"data":{
+	"sections":[
+	{"id":1,
+	 "title":"Primera",
+	 "image":"http://pipsum.com/400x200.jsp",
+	 "article":"Guillermo de jesus romo gomez"	
+	},
+	{"id":2,
+	 "title":"Segunda",
+	 "image":"http://pipsum.com/400x200.jsp",
+	 "article":"Romo Gomez Guillermo de Jesus"	
+	},
+	{"id":3,
+	 "title":"Tercera",
+	 "image":"http://pipsum.com/400x200.jsp",
+	 "article":"Guillermo de Jesus Romo Gomez"	
+	},
+	{"id":4,
+	 "title":"Cuarta",
+	 "image":"http://pipsum.com/400x200.jsp",
+	 "article":"Romo Gomez Guillermo de Jesus"	
+	},
+	{"id":5,
+	 "title":"Quinta",
+	 "image":"http://pipsum.com/400x200.jsp",
+	 "article":"Guillermo de Jesus Romo Gomez"	
+	}
+	],
+	"menu":[
+	{"id":1,"title":"     Horus    "},
+	{"id":2,"title":"     Amon     "},
+	{"id":3,"title":"     Ra       "},
+	{"id":4,"title":"     Isis     "},
+	{"id":5,"title":"     Osiris   "},
+	{"id":6,"title":"     Sobek    "},
+	{"id":7,"title":"     Thot     "},
+	{"id":8,"title":"     Anubis   "}
+	]
+	}
+}
