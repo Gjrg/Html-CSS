@@ -70,8 +70,122 @@ ul {
 	#main-header a{
 		font-size: 15px;
 		letter-spacing: 1px;
+		display: none;
 	}	
 }
+/*menu*/
+
+#main-header #menu-mobile-btn {
+display: none;
+}
+@media (max-width: 375px) {
+#main-header #menu-mobile-btn {
+display: block;
+position: absolute;
+right: 8px;
+width: 40px;
+height: 40px;
+top: 8px;
+cursor: pointer;
+}
+#main-header #menu-mobile-btn span {
+display: block;
+position: absolute;
+top: 16px;
+width: 30px;
+height: 4px;
+background-color: #004D40;
+border-radius: 2px;
+left: 5px;
+transition: all .3s;
+}
+#main-header #menu-mobile-btn.open span {
+
+transform: rotate(45deg);
+}
+#main-header #menu-mobile-btn span::before {
+content: '';
+display: block;
+position: absolute;
+top: 10px;
+width: 30px;
+height: 4px;
+background-color: #448d7a;
+border-radius: 2px;
+left: 0;
+transition: all .3s;
+}
+#main-header #menu-mobile-btn span::after {
+content: '';
+display: block;
+position: absolute;
+top: -10px;
+width: 30px;
+height: 4px;
+background-color: #448d7a;
+border-radius: 2px;
+left: 0;
+transition: all .3s;
+}
+#main-header #menu-mobile-btn.open span::before {
+
+transform: translateY(-10px) rotate(90deg);
+}
+#main-header #menu-mobile-btn.open span::after {
+transform: translateY(10px);
+visibility: hidden;
+}
+}
+
+ 
+
+/*menu container*/
+
+#menu-mobile-container{
+display: none;
+opacity: 0;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #004D40;
+z-index: 9998;
+padding-top: 64px;
+text-align: center;
+transition: all .3s;
+transition-delay: 1s;
+}
+#menu-mobile-container ul {
+1.5em 0;
+}
+#menu-mobile-container ul li {
+1em 0;
+text-transform: uppercase;
+letter-spacing: 2px;
+25px;
+padding: 5px;
+transition: all .3s;
+cursor: pointer;
+}
+@media (max-width: 375px) {
+#menu-mobile-container.open {
+display: block;
+opacity: 1;
+}
+}
+
+ 
+
+/*body tag*/
+
+ 
+
+.no-scroll {
+overflow: hidden;
+}
+
+
 
 /*aside*/
 #main-container aside#main-nav {
@@ -146,6 +260,7 @@ ul {
 	#main-container #main-sections-container section header{
 		float: none;
 		position: absolute;
+		left: 25%
 		
 	
 	}  		
